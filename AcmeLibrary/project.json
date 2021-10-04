@@ -3,10 +3,11 @@
   "description": "Blank Library",
   "main": "NewActivity.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "2.9.5",
-    "UiPath.Mail.Activities": "1.9.5",
-    "UiPath.System.Activities": "20.10.3",
-    "UiPath.UIAutomation.Activities": "20.10.8"
+    "UiPath.Excel.Activities": "2.11.1-preview",
+    "UiPath.Mail.Activities": "1.11.2-preview",
+    "UiPath.System.Activities": "21.10.0-preview",
+    "UiPath.Testing.Activities": "1.4.2-preview",
+    "UiPath.UIAutomation.Activities": "21.10.0-preview"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -42,5 +43,6 @@
   "expressionLanguage": "VisualBasic",
   "isTemplate": false,
   "templateProjectData": {},
-  "publishData": {}
+  "publishData": {},
+  "targetFramework": "Legacy"
 }

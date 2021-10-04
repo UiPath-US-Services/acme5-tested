@@ -4,9 +4,10 @@
   "main": "Main.xaml",
   "dependencies": {
     "AcmeLibrary": "[1.0.16]",
-    "UiPath.Excel.Activities": "[2.9.5]",
-    "UiPath.System.Activities": "[20.10.3]",
-    "UiPath.UIAutomation.Activities": "[20.10.8]"
+    "UiPath.Excel.Activities": "[2.11.1-preview]",
+    "UiPath.System.Activities": "[21.10.0-preview]",
+    "UiPath.Testing.Activities": "[1.4.2-preview]",
+    "UiPath.UIAutomation.Activities": "[21.10.0-preview]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -50,5 +51,6 @@
   ],
   "isTemplate": false,
   "templateProjectData": {},
-  "publishData": {}
+  "publishData": {},
+  "targetFramework": "Legacy"
 }
