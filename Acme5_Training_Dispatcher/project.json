@@ -47,12 +47,12 @@
       {
         "editingStatus": "Publishable",
         "testCaseId": "0997ce6c-58f6-4c0f-ba47-89a0cd01a4c4",
-        "fileName": "Tests\\Aceme_Login_Success.xaml"
+        "fileName": "Tests\\Acme_Login_Success.xaml"
       },
       {
         "editingStatus": "Publishable",
         "testCaseId": "325f7bde-c18a-4657-97f7-e173173390f3",
-        "fileName": "Tests\\Aceme_Login_Success_AlreadyLoggedIn.xaml"
+        "fileName": "Tests\\Acme_Login_Success_AlreadyLoggedIn.xaml"
       },
       {
         "editingStatus": "Publishable",
