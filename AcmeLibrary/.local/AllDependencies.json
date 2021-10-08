@@ -7985,15 +7985,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Michael Delles\\.nuget\\packages\\": {}
+    "C:\\Users\\fan.zhang\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "AcmeLibrary",
       "projectName": "AcmeLibrary",
-      "projectPath": "C:\\Users\\Michael Delles\\Documents\\GitHub\\acme5-tested\\AcmeLibrary\\.local",
-      "packagesPath": "C:\\Users\\Michael Delles\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Michael Delles\\Documents\\GitHub\\acme5-tested\\AcmeLibrary\\.local"
+      "projectPath": "C:\\Users\\fan.zhang\\Documents\\UiPath\\acme5-tested\\AcmeLibrary\\.local",
+      "packagesPath": "C:\\Users\\fan.zhang\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fan.zhang\\Documents\\UiPath\\acme5-tested\\AcmeLibrary\\.local"
     },
     "frameworks": {
       "net461": {
@@ -8024,7 +8024,7 @@
             "version": "[21.10.0-preview, 21.10.0-preview]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Michael Delles\\AppData\\Local\\UiPath\\app-21.4.4\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\fan.zhang\\AppData\\Local\\UiPath\\app-21.4.4\\runtime.json"
       }
     }
   },
