@@ -46,18 +46,18 @@
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "0997ce6c-58f6-4c0f-ba47-89a0cd01a4c4",
-        "fileName": "Tests\\Acme_Login_Success.xaml"
+        "testCaseId": "d51a9f81-5138-4925-ab68-37be52c994bc",
+        "fileName": "Tests\\Acme_LogoutClose_Success.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "325f7bde-c18a-4657-97f7-e173173390f3",
+        "testCaseId": "08694f3b-c91d-458f-b134-719f4611b340",
         "fileName": "Tests\\Acme_Login_Success_AlreadyLoggedIn.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "d51a9f81-5138-4925-ab68-37be52c994bc",
-        "fileName": "Tests\\Acme_LogoutClose_Success.xaml"
+        "testCaseId": "bc19c935-a75b-40fb-b00c-4c00f8ad45bc",
+        "fileName": "Tests\\Acme_Login_Success.xaml"
       }
     ],
     "modernBehavior": true
