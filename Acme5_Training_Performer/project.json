@@ -48,6 +48,11 @@
         "editingStatus": "Publishable",
         "testCaseId": "a3dc1fed-8985-4c94-a11c-292eb0a92556",
         "fileName": "Tests\\Acme\\Acme_UpdateWorkItem.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "538ee2d0-e233-4a75-a8dc-d48718a3407e",
+        "fileName": "Tests\\Acme\\Acme_GetClientData.xaml"
       }
     ],
     "modernBehavior": true
