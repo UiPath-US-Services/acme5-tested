@@ -38,7 +38,13 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7299f53d-302b-47f1-b50a-cee637479a93",
+        "fileName": "Tests\\Acme_OpenBrowser_Success.xaml"
+      }
+    ],
     "modernBehavior": true
   },
   "expressionLanguage": "VisualBasic",
