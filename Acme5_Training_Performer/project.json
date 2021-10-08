@@ -42,17 +42,17 @@
         "editingStatus": "Publishable",
         "testCaseId": "1efb7dc4-70ab-42e6-8141-283f72e426db",
         "dataVariationFilePath": ".variations\\TestData_Acme_CalculateSHAHash.json",
-        "fileName": "Tests\\Acme\\Acme_CalculateSHAHash.xaml"
+        "fileName": "Tests\\Acme\\Acme_CalculateSHAHash_WithVariations_ResultsAreCorrect.xaml"
       },
       {
         "editingStatus": "Publishable",
         "testCaseId": "a3dc1fed-8985-4c94-a11c-292eb0a92556",
-        "fileName": "Tests\\Acme\\Acme_UpdateWorkItem.xaml"
+        "fileName": "Tests\\Acme\\Acme_UpdateWorkItem_ValidInputs_NoException.xaml"
       },
       {
         "editingStatus": "Publishable",
         "testCaseId": "538ee2d0-e233-4a75-a8dc-d48718a3407e",
-        "fileName": "Tests\\Acme\\Acme_GetClientData.xaml"
+        "fileName": "Tests\\Acme\\Acme_GetClientData_ValidInputs_ResultsAreCorrect.xaml"
       }
     ],
     "modernBehavior": true
