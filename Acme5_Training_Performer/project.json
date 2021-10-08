@@ -37,7 +37,19 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1efb7dc4-70ab-42e6-8141-283f72e426db",
+        "dataVariationFilePath": ".variations\\TestData_Acme_CalculateSHAHash.json",
+        "fileName": "Tests\\Acme\\Acme_CalculateSHAHash.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a3dc1fed-8985-4c94-a11c-292eb0a92556",
+        "fileName": "Tests\\Acme\\Acme_UpdateWorkItem.xaml"
+      }
+    ],
     "modernBehavior": true
   },
   "expressionLanguage": "VisualBasic",
