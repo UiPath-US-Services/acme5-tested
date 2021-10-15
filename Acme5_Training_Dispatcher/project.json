@@ -52,12 +52,27 @@
       {
         "editingStatus": "Publishable",
         "testCaseId": "08694f3b-c91d-458f-b134-719f4611b340",
-        "fileName": "Tests\\Acme_Login_Success_AlreadyLoggedIn.xaml"
+        "fileName": "Tests\\Acme_Login_AlreadyLoggedIn.xaml"
       },
       {
         "editingStatus": "Publishable",
         "testCaseId": "bc19c935-a75b-40fb-b00c-4c00f8ad45bc",
         "fileName": "Tests\\Acme_Login_Success.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c79a6689-7b94-4522-b7be-fb8dddfd294f",
+        "fileName": "Tests\\Acme_NavigateTo_Success.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "d1069da4-b8c6-450c-87ba-6f0553baba72",
+        "fileName": "Tests\\Acme_PopulateQueue_Success.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "14d82397-e4b0-4cda-832f-7771f54d6e92",
+        "fileName": "Tests\\Acme_ScrapeData_FilterCheck.xaml"
       }
     ],
     "modernBehavior": true
