@@ -4,10 +4,10 @@
   "main": "Main.xaml",
   "dependencies": {
     "AcmeLibrary": "[1.0.16]",
-    "UiPath.Excel.Activities": "[2.11.1-preview]",
-    "UiPath.System.Activities": "[21.10.0-preview]",
-    "UiPath.Testing.Activities": "[1.4.2-preview]",
-    "UiPath.UIAutomation.Activities": "[21.10.0-preview]"
+    "UiPath.Excel.Activities": "[2.12.0-preview]",
+    "UiPath.System.Activities": "[21.12.0-preview]",
+    "UiPath.Testing.Activities": "[1.4.6]",
+    "UiPath.UIAutomation.Activities": "[21.12.0-preview]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -17,6 +17,7 @@
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
+    "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
     "excludedLoggedData": [
@@ -25,7 +26,8 @@
     ],
     "executionType": "Workflow",
     "readyForPiP": false,
-    "startsInPiP": false
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -53,6 +55,16 @@
         "editingStatus": "Publishable",
         "testCaseId": "538ee2d0-e233-4a75-a8dc-d48718a3407e",
         "fileName": "Tests\\Acme\\Acme_GetClientData_ValidInputs_ResultsAreCorrect.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b1d041e1-9054-47ab-bb44-f2791034d2b3",
+        "fileName": "Acme_Login_ReachesHomePage.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2256e516-11be-4843-a76d-99caff6a43d4",
+        "fileName": "Test_Acme_OpenWebsite.xaml"
       }
     ],
     "modernBehavior": true

@@ -1,0 +1,8 @@
+{
+  "dataVariationFileInfo": [
+    {
+      "filePath": ".variations\\TestData_Acme_CalculateSHAHash.json",
+      "dataVariationType": "File"
+    }
+  ]
+}
