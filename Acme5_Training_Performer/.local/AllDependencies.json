@@ -6031,7 +6031,7 @@
     {
       "code": "NU1101",
       "level": "Error",
-      "message": "Unable to find package AcmeLibrary. No packages exist with this id in source(s): Alpha Activities, Connect, https://api.nuget.org/v3/index.json, https://api.nuget.org/v3/index.json, https://gallery.uipath.com/api/v2, https://staging.uipath.com/uipathcoeattend/Attended/orchestrator_/nuget/v3/65c131da-6393-460c-af06-c70649b658ed/index.json, https://uipath.pkgs.visualstudio.com/Activities-Alpha/_packaging/activities-alpha/nuget/v3/index.json, https://www.myget.org/F/workflow/, https://www.myget.org/F/workflow/, Local, Marketplace, Microsoft Visual Studio Offline Packages, Nuget, nuget.org, Official",
+      "message": "Unable to find package AcmeLibrary. No packages exist with this id in source(s): Alpha Activities, C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\, C:\\Users\\Michael Delles\\AppData\\Local\\Programs\\UiPath\\Studio\\Packages, Connect, https://api.nuget.org/v3/index.json, https://api.nuget.org/v3/index.json, https://gallery.uipath.com/api/v2, https://gallery.uipath.com/api/v2, https://staging.uipath.com/uspsenablement/DevSandbox/orchestrator_/nuget/v3/e0e8d21c-5f1c-409e-afc3-39696bca6d20/index.json, https://uipath.pkgs.visualstudio.com/Activities-Alpha/_packaging/activities-alpha/nuget/v3/index.json, https://www.myget.org/F/workflow/, https://www.myget.org/F/workflow/, Local, Marketplace, Microsoft Visual Studio Offline Packages, Nuget, nuget.org, Official",
       "libraryId": "AcmeLibrary",
       "targetGraphs": [
         ".NETFramework,Version=v4.6.1",
