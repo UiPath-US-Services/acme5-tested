@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Acme_ScrapeData" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:utam="clr-namespace:UiPath.Testing.Activities.Mocks;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Acme_ScrapeData" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:utam="clr-namespace:UiPath.Testing.Activities.Mocks;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Type" Type="InArgument(x:String)" />
     <x:Property Name="out_WIIDs" Type="OutArgument(sd:DataTable)" />
@@ -6,10 +6,10 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1705,1258</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1407,1085</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Acme_ScrapeData_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <sco:Collection x:TypeArguments="x:String">
+    <scg:List x:TypeArguments="x:String" Capacity="64">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -44,10 +44,10 @@
       <x:String>UiPath.Testing.Activities.Mocks</x:String>
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
-    </sco:Collection>
+    </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <sco:Collection x:TypeArguments="AssemblyReference">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="68">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -80,19 +80,21 @@
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
-    </sco:Collection>
+    </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Acme_ScrapeData" sap:VirtualizedContainerService.HintSize="930,1093" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Acme_ScrapeData" sap:VirtualizedContainerService.HintSize="476,1020" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="888,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Acme_ScrapeData START&quot;]" />
-    <utam:MockActivity DisplayName="Mock Use Application/Browser" sap:VirtualizedContainerService.HintSize="888,539" sap2010:WorkflowViewState.IdRef="MockActivity_1" MockedActivityIdRef="NApplicationCard_2">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Acme_ScrapeData START&quot;]" />
+    <utam:MockActivity DisplayName="Mock Use Application/Browser" MockedActivityIdRef="NApplicationCard_2">
       <utam:MockActivity.MockedActivity>
-        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="434,466" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="17567bf8-9aeb-4955-be4f-280326656b5a" Version="V1">
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="434,466" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="b971cf1d-99b0-4ec8-a39f-cf3f27eaa03b" Version="V1">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
@@ -104,12 +106,12 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NExtractData ExtractDataSettings="{x:Null}" AppendResults="False" ContinueOnError="True" DataTable="[out_WIIDs]" DisplayName="Extract Table Data" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="Rows" MaximumResults="0">
+                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[out_WIIDs]" DelayAfter="0" DelayBefore="0" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='WIID'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Type'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataNextLink' /&gt;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NExtractData_2" InteractionMode="DebuggerApi" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="b971cf1d-99b0-4ec8-a39f-cf3f27eaa03b" Timeout="3">
                   <uix:NExtractData.NextLink>
-                    <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items" DesignTimeRectangle="1440, 858, 22, 22" ElementType="Text" FriendlyName="'&gt;'" FullSelectorArgument="&lt;webctrl aaname='&amp;gt;' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='&amp;gt;' tag='A' type='' check:text='&amp;gt;' /&gt;" Guid="7e99f58c-4429-493a-865a-f601d8e612f9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAESSURBVEhLzZVRCoQgFEVntW7CRbQON9Em3ERE0Ef0E+QbbmCY3tHJBpmPA5HPd1Cv9XLOSQv+R7Tvu6zrKvM8yziOMgzDAZ7xDmOoYXNDsqJlWc7GJVDLenioaNs2maaJNsyBOZjLeiYiFIZbdBfMZbJEVLOSGPSI+15Ed86kRHxmpwjJYROeEKbxFCGmrPgJ6JmIcCdY8YE1orURy8YyoGciKiYNMqVEKS3GknECeiYiVsjppTuESrqejV95IPJYMbosS0TfX9LvV0S3LhsGUHFGNAzZeFemjsa72YUFTT5BniYfVdDsNwFQWLMyzGESQEWeO2cWn0lMVgSQHMQUdyLcUjzjHcbCdH2iKPoVjURO3mmPCSV+jmkyAAAAAElFTkSuQmCC" InformativeScreenshot="f88b0fe70a959cd08bdab0003a229afd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="FuzzySelector, Image" />
+                    <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items" DesignTimeRectangle="1432, 896, 22, 22" ElementType="Text" FriendlyName="'&gt;'" FullSelectorArgument="&lt;webctrl tag='A' aria-label='Next*' class='page-numbers' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' aria-label='Next*' class='page-numbers' type='' aaname='&amp;gt;' check:text='&amp;gt;' /&gt;" Guid="00a20c15-bb2a-4cf4-a47c-eecabbb90b2d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEaSURBVEhLzZXhCoIwFIV7WqleIegdkl7ChyjfIegZSkT8I/4RuXGCO9Y8bU5jdOCAuLv7se1MN5JI/wMax1H6vpe2baWua6mq6m084x3GUBOSF9R1nWkcMmp9oqBhGKRpGtrQZ8zBXKYJCIX2FsUacxlsAlqyEtfo4eoDFHMmIbtnZkBIDpuwxnYaDQgxZcVrjJ4qA8KdYMXw5bSTc/mkYz6jp8qAQkkDLMsy2edXOs6MnioDYoXMt+L4Bm4PhdzJuGtVNEj9KPNZMNXsrVPHrIhunS8M8JIzomHwxXtp6mi8k11YKMknSJXkowol+01AKFyyMsxhEIiCVDFn5p6JKy8IQnIQU9wJe0vxjHcYs9P1TUHQr5QIJPICXacQ2QW5YBYAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
                   </uix:NExtractData.NextLink>
                   <uix:NExtractData.Target>
-                    <uix:TargetAnchorable DesignTimeRectangle="469, 416, 998, 427" FriendlyName="'Actions WIID'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="0e67cd9e-b22e-40e9-9ecd-7c42a852ddb3" InformativeScreenshot="609277991c079cc9e9e7cc0bf36bc4e3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" />
+                    <uix:TargetAnchorable DesignTimeRectangle="461, 449, 998, 431" FriendlyName="'Actions WIID'" FullSelectorArgument="&lt;webctrl tag='TBODY' /&gt;" Guid="c51c2cbb-3cc4-471e-bffa-7a4c4f81bdb9" InformativeScreenshot="052d6baf3c7b0ff6f35a09c053dc7aac.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" />
                   </uix:NExtractData.Target>
                 </uix:NExtractData>
               </Sequence>
@@ -120,13 +122,13 @@
           </uix:NApplicationCard.TargetApp>
         </uix:NApplicationCard>
       </utam:MockActivity.MockedActivity>
-      <Sequence sap:VirtualizedContainerService.HintSize="376,208" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence sap:VirtualizedContainerService.HintSize="376,208" sap2010:WorkflowViewState.IdRef="">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:BuildDataTable sap2010:Annotation.AnnotationText="Build a datatable with 2 rows:&#xA;Row 1: Type = WI3&#xA;Row 2: Type = WI2" DataTable="[out_WIIDs]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Type&gt;WI3&lt;/Type&gt;&#xD;&#xA;    &lt;Status&gt;Open&lt;/Status&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Type&gt;WI2&lt;/Type&gt;&#xD;&#xA;    &lt;Status&gt;Open&lt;/Status&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+        <ui:BuildDataTable sap2010:Annotation.AnnotationText="Build a datatable with 2 rows:&#xA;Row 1: Type = WI3&#xA;Row 2: Type = WI2" DataTable="[out_WIIDs]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Type&gt;WI3&lt;/Type&gt;&#xA;    &lt;Status&gt;Open&lt;/Status&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Type&gt;WI2&lt;/Type&gt;&#xA;    &lt;Status&gt;Open&lt;/Status&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -135,7 +137,7 @@
         </ui:BuildDataTable>
       </Sequence>
     </utam:MockActivity>
-    <ui:FilterDataTable DataTable="[out_WIIDs]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="888,160" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[out_WIIDs]" SelectColumnsMode="Keep">
+    <ui:FilterDataTable DataTable="[out_WIIDs]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[out_WIIDs]" SelectColumnsMode="Keep">
       <ui:FilterDataTable.Filters>
         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
           <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -154,6 +156,6 @@
         </scg:List>
       </ui:FilterDataTable.SelectColumns>
     </ui:FilterDataTable>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="888,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Acme_ScrapeData END&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Acme_ScrapeData END - The number of WI5 items scraped is &quot; +  out_WIIDs.Rows.Count.ToString]" />
   </Sequence>
 </Activity>
