@@ -4,11 +4,9 @@
   "main": "Main.xaml",
   "dependencies": {
     "AcmeLibrary": "[1.0.27]",
-    "UiPath.Excel.Activities": "[2.11.1-preview]",
-    "UiPath.Mail.Activities": "[1.11.2-preview]",
-    "UiPath.System.Activities": "[21.10.0-preview]",
-    "UiPath.Testing.Activities": "[1.4.2-preview]",
-    "UiPath.UIAutomation.Activities": "[21.10.0-preview]"
+    "UiPath.System.Activities": "[21.10.4]",
+    "UiPath.Testing.Activities": "[1.4.6]",
+    "UiPath.UIAutomation.Activities": "[21.10.5]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -17,7 +15,9 @@
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
+    "netFrameworkLazyLoading": false,
     "isPausable": true,
+    "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
     "excludedLoggedData": [
@@ -26,7 +26,8 @@
     ],
     "executionType": "Workflow",
     "readyForPiP": false,
-    "startsInPiP": false
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false
   },
   "designOptions": {
     "projectProfile": "Developement",
