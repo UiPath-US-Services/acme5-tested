@@ -1,10 +1,9 @@
-﻿{
+{
   "name": "Acme5_Training_Dispatcher",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
     "AcmeLibrary": "[1.0.27]",
-    "UiPath.Mail.Activities": "[1.11.2-preview]",
     "UiPath.System.Activities": "[21.10.4]",
     "UiPath.Testing.Activities": "[1.4.6]",
     "UiPath.UIAutomation.Activities": "[21.10.5]"
