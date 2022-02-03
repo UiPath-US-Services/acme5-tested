@@ -58,7 +58,7 @@
         "fileName": "Tests\\Acme\\Acme_GetClientData_ValidInputs_ResultsAreCorrect.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "b1d041e1-9054-47ab-bb44-f2791034d2b3",
         "fileName": "Tests\\Acme\\Acme_Login_ReachesHomePage.xaml"
       },

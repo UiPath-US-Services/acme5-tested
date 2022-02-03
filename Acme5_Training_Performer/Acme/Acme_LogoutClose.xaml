@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Acme_LogoutClose" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="990,1006" sap2010:WorkflowViewState.IdRef="Acme_LogoutClose_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Acme_LogoutClose" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1374,831" sap2010:WorkflowViewState.IdRef="Acme_LogoutClose_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="62">
       <x:String>System.Activities</x:String>
@@ -70,38 +70,26 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Acme_LogoutClose" sap:VirtualizedContainerService.HintSize="476,941" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Acme_LogoutClose" sap:VirtualizedContainerService.HintSize="476,766" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Acme LogoutClose Start&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="434,587" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="082281d0-4335-42ac-83f8-f458f9f70212" Version="V1">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Always" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="434,412" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="082281d0-4335-42ac-83f8-f458f9f70212" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,371" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="ui:UiElement" Name="logoutexists" />
-            </Sequence.Variables>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click 'Log Out'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items" ContentHash="C97LXmRCVkuarHi9gxyYzA" DesignTimeRectangle="1473, 79, 80, 50" ElementType="Text" FriendlyName="'Log Out'" FullSelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' type='' check:text='Log Out' /&gt;" Guid="56c35deb-e1db-4407-bc14-02411e26245f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAA2CAYAAABZV76QAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGzSURBVHhe7ZzNkYQgEEY9GodZWJOFRkEOYwiEYGJbe9hMeqUHnRbB/alvt2Tqo+odsJGBRwOephEWaGne3j+E4Gi6rhOCg0LBUCgYCgVDoWAoFAyFgqFQMBQKhkLBUCgYCgVDoWAoFAyFgqFQMBQKhkLBUCgYCgUDE9o7L/N9yMb+jHGSeZ4NXtwt065IL87PMo252O+oVuhwzwi8OfGLWO/6XdsyVQt9DH7LprStzTbvxAVhpf607SRDLqZSn6JVvO1ni+/H8/1FOOefhMbBb/GkHjNry5RVbqG/g6SEEF8FlYWGeq0ZmssoM7Hju+kCWB6xs4yy/b2kUI0t27jfPR9kihOzGbVSzkIKBQs9jwVsfy8pFLvlFyCXUqjXKvQgKKnrJM3EvriUAirKiFNiPzbbdVxG/v69qwsNElJSiYfnkVViIH42nZ2Tin1HSQQr+9+dxudRE+LbuE8W7yfAhKKx52BNXEKoZom9tJJzsCYukqHJcVCpzMBlt3ytUCgYCgVDoWAoFAyFgqFQMBQKhkLBUCgYCgVDoWAoFAyFgqFQMBQKhkLBNG3bCsHBP3GBFpFPQBDjES7bb7QAAAAASUVORK5CYII=" InformativeScreenshot="5aa9862db462ada43f0a60496bd51e01.png" Reference="egvBaxd_tUCumLsA2O553g/2oaNFitvv0a9B0otHC5Zog" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="FuzzySelector, Image" />
-              </uix:NClick.Target>
-            </uix:NClick>
-            <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="334,81" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" />
-          </Sequence>
+          <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click 'Log Out'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left">
+            <uix:NClick.Target>
+              <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items" ContentHash="C97LXmRCVkuarHi9gxyYzA" DesignTimeRectangle="1473, 79, 80, 50" ElementType="Text" FriendlyName="'Log Out'" FullSelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' type='' check:text='Log Out' /&gt;" Guid="56c35deb-e1db-4407-bc14-02411e26245f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAA2CAYAAABZV76QAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGzSURBVHhe7ZzNkYQgEEY9GodZWJOFRkEOYwiEYGJbe9hMeqUHnRbB/alvt2Tqo+odsJGBRwOephEWaGne3j+E4Gi6rhOCg0LBUCgYCgVDoWAoFAyFgqFQMBQKhkLBUCgYCgVDoWAoFAyFgqFQMBQKhkLBUCgYCgUDE9o7L/N9yMb+jHGSeZ4NXtwt065IL87PMo252O+oVuhwzwi8OfGLWO/6XdsyVQt9DH7LprStzTbvxAVhpf607SRDLqZSn6JVvO1ni+/H8/1FOOefhMbBb/GkHjNry5RVbqG/g6SEEF8FlYWGeq0ZmssoM7Hju+kCWB6xs4yy/b2kUI0t27jfPR9kihOzGbVSzkIKBQs9jwVsfy8pFLvlFyCXUqjXKvQgKKnrJM3EvriUAirKiFNiPzbbdVxG/v69qwsNElJSiYfnkVViIH42nZ2Tin1HSQQr+9+dxudRE+LbuE8W7yfAhKKx52BNXEKoZom9tJJzsCYukqHJcVCpzMBlt3ytUCgYCgVDoWAoFAyFgqFQMBQKhkLBUCgYCgVDoWAoFAyFgqFQMBQKhkLBNG3bCsHBP3GBFpFPQBDjES7bb7QAAAAASUVORK5CYII=" InformativeScreenshot="5aa9862db462ada43f0a60496bd51e01.png" Reference="egvBaxd_tUCumLsA2O553g/2oaNFitvv0a9B0otHC5Zog" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="FuzzySelector, Image" />
+            </uix:NClick.Target>
+          </uix:NClick>
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
