@@ -1,0 +1,45 @@
+
+variables:
+  # The full path to the folder containing the project.json file for this pipeline
+  projectPath: Acme5_Training_Performer
+  # The name of the folder to deploy the package to.
+  folderName: ACME/ACME5
+  # Either AutoVersion to generate a build number or CurrentVersion to match the project.json version.
+  # versioningStrategy: AutoVersion
+  # The orchestrator tenant to deploy to. Not used, but may be useful if deploying to multiple tenants.
+  tenant: DevSandbox
+  # Boolean Flag indicating whether tests should be ran.
+  # runTests: 'true'
+
+# Update this trigger to specify when the pipeline should run.
+# Variables cannot be used here.
+trigger:
+  # Define what branches trigger the pipeline
+  branches:
+    include:
+      - main      # Deploy after approval
+      - master    # Same pipeline as main
+      - release*  # Test and deploy
+      - dev       # Runs tests
+
+  # Define what paths to include for building this pipeline. Normally, you should add the same projectPath as above,
+  # so that any change to the project will trigger the pipeline, but it will ignore any changes to other projects.
+  paths:
+    include:
+      - Acme5_Training_Performer/*  # Update this
+
+# This points to the repository containing the templates. Update this to point to your template repository.
+resources:
+  repositories:
+    - repository: templates
+      type: git  # use 'git' for a repo hosted in Azure DevOps
+      name: TestingBestPractices/PipelineTemplates
+
+# Use the specified template. 
+extends:
+  template: pipeline-template_updated.yml@templates
+  parameters:
+    projectPath: $(projectPath)
+    folderName: $(folderName)
+    # versioningStrategy: $(versioningStrategy)
+    # runTests: $(runTests)
