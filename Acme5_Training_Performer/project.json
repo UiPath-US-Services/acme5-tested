@@ -63,9 +63,9 @@
         "fileName": "Tests\\Acme\\Acme_LoginWithValidCred_ReachesHomePage.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "2256e516-11be-4843-a76d-99caff6a43d4",
-        "fileName": "Tests\\Acme\\Test_Acme_OpenWebsite.xaml"
+        "fileName": "Tests\\Acme\\Acme_OpenWebsite_LaunchAcmeSite.xaml"
       }
     ],
     "modernBehavior": true
