@@ -1,3 +1,8 @@
 {
-  "mockedWorkflows": []
+  "mockedWorkflows": [
+    {
+      "mockFilePath": "Mocks\\Acme\\Acme_UpdateWorkItem_mock.xaml",
+      "sourceWorkflowPath": "Acme\\Acme_UpdateWorkItem.xaml"
+    }
+  ]
 }
