@@ -66,6 +66,21 @@
         "editingStatus": "Publishable",
         "testCaseId": "2256e516-11be-4843-a76d-99caff6a43d4",
         "fileName": "Tests\\Acme\\Acme_OpenWebsite_LaunchAcmeSite.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9bafa7c4-04e7-4b99-9820-215c62067452",
+        "fileName": "Tests\\Acme\\UITests\\Acme_LoginScreen.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "68a9d0e9-defd-41fc-8ea3-a49357384290",
+        "fileName": "Tests\\Acme\\UITests\\Acme_HomeScreen.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "77307d4b-b464-4c45-ba24-5940d2bf51a1",
+        "fileName": "Tests\\Acme\\UITests\\Acme_WorkItemDetailsScreen.xaml"
       }
     ],
     "modernBehavior": true
