@@ -1,5 +1,6 @@
 {
-  "Mocks\\Acme_Login_mock.xaml": {
-    "sourceWorkflowHash": "6bd21dedc8dfa5317b207bf3d22b4491811c725ff592745f470ba04f75409bad"
-  }
+  "Mocks\\Acme\\Acme_UpdateWorkItem_mock.xaml": {
+    "sourceWorkflowHash": "1e7baf089d0a1d4017e2831807a129c8bd353a202b1fe9216325e6c3a3119c30"
+  },
+  "Mocks\\Acme\\Acme_GetClientData_mock.xaml": {}
 }

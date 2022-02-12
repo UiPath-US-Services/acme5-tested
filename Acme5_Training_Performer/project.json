@@ -16,7 +16,6 @@
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
-    "netFrameworkLazyLoading": false,
     "isPausable": true,
     "isAttended": false,
     "requiresUserInteraction": true,
@@ -50,7 +49,7 @@
       {
         "editingStatus": "Publishable",
         "testCaseId": "a3dc1fed-8985-4c94-a11c-292eb0a92556",
-        "fileName": "Tests\\Acme\\Acme_UpdateWorkItem_ValidInputs_NoExceptions.xaml"
+        "fileName": "Tests\\Acme\\Acme_UpdateWorkItem_ValidInputs_UpdatesItem.xaml"
       },
       {
         "editingStatus": "Publishable",
