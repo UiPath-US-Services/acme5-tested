@@ -2,7 +2,7 @@
   "mockedWorkflows": [
     {
       "mockFilePath": "Mocks\\Acme_ScrapeData_mock.xaml",
-      "sourceWorkflowPath": "Acme_ScrapeData.xaml"
+      "sourceWorkflowPath": "ACME\\Acme_ScrapeData.xaml"
     }
   ]
 }

@@ -1,13 +1,13 @@
 {
   "name": "Acme5_Training_Dispatcher",
+  "projectId": "14aef6f9-69d0-4617-bcf6-3239721264d5",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
-    "AcmeLibrary": "[1.0.27]",
-    "UiPath.Mail.Activities": "[1.11.2-preview]",
-    "UiPath.System.Activities": "[21.10.4]",
-    "UiPath.Testing.Activities": "[1.4.6]",
-    "UiPath.UIAutomation.Activities": "[21.10.5]"
+    "UiPath.Mail.Activities": "[1.24.13]",
+    "UiPath.System.Activities": "[24.10.7]",
+    "UiPath.Testing.Activities": "[24.10.4]",
+    "UiPath.UIAutomation.Activities": "[24.10.11]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -21,6 +21,7 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -28,7 +29,8 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": false
+    "mustRestoreAllDependencies": false,
+    "pipType": "ChildSession"
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -44,40 +46,41 @@
       {
         "editingStatus": "Publishable",
         "testCaseId": "7299f53d-302b-47f1-b50a-cee637479a93",
+        "testCaseType": "TestCase",
         "fileName": "Tests\\Acme_OpenBrowser_Success.xaml"
       },
       {
         "editingStatus": "Publishable",
         "testCaseId": "d51a9f81-5138-4925-ab68-37be52c994bc",
+        "testCaseType": "TestCase",
         "fileName": "Tests\\Acme_LogoutClose_Success.xaml"
       },
       {
         "editingStatus": "Publishable",
         "testCaseId": "08694f3b-c91d-458f-b134-719f4611b340",
+        "testCaseType": "TestCase",
         "fileName": "Tests\\Acme_Login_AlreadyLoggedIn.xaml"
       },
       {
         "editingStatus": "Publishable",
         "testCaseId": "bc19c935-a75b-40fb-b00c-4c00f8ad45bc",
+        "testCaseType": "TestCase",
         "fileName": "Tests\\Acme_Login_Success.xaml"
       },
       {
         "editingStatus": "Publishable",
         "testCaseId": "c79a6689-7b94-4522-b7be-fb8dddfd294f",
+        "testCaseType": "TestCase",
         "fileName": "Tests\\Acme_NavigateTo_Success.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "d1069da4-b8c6-450c-87ba-6f0553baba72",
-        "fileName": "Tests\\Acme_PopulateQueue_Success.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
         "testCaseId": "14d82397-e4b0-4cda-832f-7771f54d6e92",
+        "testCaseType": "TestCase",
         "fileName": "Tests\\Acme_ScrapeData_FilterCheck.xaml"
       }
     ],
-    "modernBehavior": true
+    "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
@@ -91,5 +94,5 @@
   "isTemplate": false,
   "templateProjectData": {},
   "publishData": {},
-  "targetFramework": "Legacy"
+  "targetFramework": "Windows"
 }
