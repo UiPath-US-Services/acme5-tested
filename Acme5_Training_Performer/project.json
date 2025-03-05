@@ -1,13 +1,13 @@
 {
-  "name": "Acme5_Training_Performer",
+  "name": "Acme5_Training_Performer_Windows",
+  "projectId": "19c9e805-0f6c-4b1e-8a26-fc161976113b",
   "description": "Robotic Enterprise Framework",
   "main": "Main.xaml",
   "dependencies": {
-    "AcmeLibrary": "[1.0.16]",
-    "UiPath.Excel.Activities": "[2.12.0-preview]",
-    "UiPath.System.Activities": "[21.12.0-preview]",
-    "UiPath.Testing.Activities": "[1.4.6]",
-    "UiPath.UIAutomation.Activities": "[21.10.1]"
+    "UiPath.Excel.Activities": "[2.24.4]",
+    "UiPath.System.Activities": "[24.10.7]",
+    "UiPath.Testing.Activities": "[24.10.4]",
+    "UiPath.UIAutomation.Activities": "[24.10.11]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -21,6 +21,7 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -28,7 +29,8 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": false
+    "mustRestoreAllDependencies": false,
+    "pipType": "ChildSession"
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -43,32 +45,37 @@
     "fileInfoCollection": [
       {
         "editingStatus": "Publishable",
-        "testCaseId": "1efb7dc4-70ab-42e6-8141-283f72e426db",
-        "dataVariationFilePath": ".variations\\TestData_Acme_CalculateSHAHash.json",
-        "fileName": "Tests\\Acme\\Acme_CalculateSHAHash_WithVariations_ResultsAreCorrect.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "a3dc1fed-8985-4c94-a11c-292eb0a92556",
-        "fileName": "Tests\\Acme\\Acme_UpdateWorkItem_ValidInputs_NoException.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
         "testCaseId": "538ee2d0-e233-4a75-a8dc-d48718a3407e",
+        "testCaseType": "TestCase",
         "fileName": "Tests\\Acme\\Acme_GetClientData_ValidInputs_ResultsAreCorrect.xaml"
       },
       {
         "editingStatus": "Publishable",
         "testCaseId": "b1d041e1-9054-47ab-bb44-f2791034d2b3",
+        "testCaseType": "TestCase",
         "fileName": "Tests\\Acme\\Acme_LoginWithValidCred_ReachesHomePage.xaml"
       },
       {
         "editingStatus": "Publishable",
         "testCaseId": "2256e516-11be-4843-a76d-99caff6a43d4",
+        "testCaseType": "TestCase",
         "fileName": "Tests\\Acme\\Acme_OpenWebsite_LaunchAcmeSite.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1efb7dc4-70ab-42e6-8141-283f72e426db",
+        "dataVariationFilePath": ".variations\\TestData_Acme_CalculateSHAHash.json",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Acme\\Acme_CalculateSHAHash_ResultsMatchExpectations.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a3dc1fed-8985-4c94-a11c-292eb0a92556",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Acme\\Acme_UpdateWorkItem_ChangesWorkItemStatus.xaml"
       }
     ],
-    "modernBehavior": true
+    "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
@@ -82,5 +89,5 @@
   "isTemplate": false,
   "templateProjectData": {},
   "publishData": {},
-  "targetFramework": "Legacy"
+  "targetFramework": "Windows"
 }
